@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.2 -mcpu=cortex-m3 -mthumb -g -Map=Example_GPIO.map -O1 --gc-sections -lm -lgcc -lc -lstdc++ -LC:\CooCox\CoIDE\configuration\ProgramData\Example_GPIO -TC:\CooCox\CoIDE\configuration\ProgramData\Example_GPIO/arm-gcc-link.ld -g">
+      <target file="Example_GPIO.elf" lastModified="15dc12ff434">
+         <source file="..\obj\system_stm32f10x.o" lastModified="15dc12fed3e"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="15dc12fee11"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="15dc12feec0"/>
+         <source file="..\obj\main.o" lastModified="15dc12fef34"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="15dc12fefdc"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.2 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=CAN_SPI_Master.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\CAN_Transmit -TC:\CooCox\CoIDE\configuration\ProgramData\CAN_Transmit/arm-gcc-link.ld -g">
+      <target file="CAN_SPI_Master.elf" lastModified="15e840f5743">
+         <source file="..\obj\stm32f1xx_hal_rcc_ex.o" lastModified="15e840f4cad"/>
+         <source file="..\obj\stm32f1xx_hal_pwr.o" lastModified="15e840f4d19"/>
+         <source file="..\obj\stm32f1xx_hal_can.o" lastModified="15e840f4db3"/>
+         <source file="..\obj\stm32f1xx_hal.o" lastModified="15e840f4e38"/>
+         <source file="..\obj\stm32f1xx_it.o" lastModified="15e840f4ebd"/>
+         <source file="..\obj\stm32f1xx_hal_gpio_ex.o" lastModified="15e840f4f27"/>
+         <source file="..\obj\stm32f1xx_hal_cortex.o" lastModified="15e840f4fab"/>
+         <source file="..\obj\system_stm32f1xx.o" lastModified="15e840f4ff5"/>
+         <source file="..\obj\stm32f1xx_hal_rcc.o" lastModified="15e840f5098"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="15e840f50c4"/>
+         <source file="..\obj\main.o" lastModified="15e840f5131"/>
+         <source file="..\obj\stm32f1xx_hal_spi_ex.o" lastModified="15e840f5191"/>
+         <source file="..\obj\stm32f1xx_hal_flash.o" lastModified="15e840f520a"/>
+         <source file="..\obj\stm32f1xx_hal_gpio.o" lastModified="15e840f5277"/>
+         <source file="..\obj\stm32f1xx_hal_dma.o" lastModified="15e840f52f3"/>
+         <source file="..\obj\stm32f1xx_hal_spi.o" lastModified="15e840f53b6"/>
+         <source file="..\obj\stm32f1xx_hal_msp.o" lastModified="15e840f5418"/>
+         <source file="..\obj\stm32f1xx_hal_tim.o" lastModified="15e840f546f"/>
+         <source file="..\obj\stm32f1xx_hal_flash_ex.o" lastModified="15e840f54ec"/>
+         <source file="..\obj\stm32f1xx_hal_tim_ex.o" lastModified="15e840f5541"/>
+      </target>
+   </processor>
+</history>
