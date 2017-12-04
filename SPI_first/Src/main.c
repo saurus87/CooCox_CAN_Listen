@@ -117,23 +117,25 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 
-	  HAL_SPI_TransmitReceive(&hspi1,data_tranc,data_rec,8,1000);
+//	  HAL_SPI_TransmitReceive(&hspi1,data_tranc,data_rec,8,1000);
 
-//	  HAL_SPI_Transmit(&hspi1,(uint8_t*)data_tranc,8,1000);
-//	  HAL_Delay(200);
+	  HAL_SPI_Transmit(&hspi1,data_tranc,8,1000);
 
-	  HAL_SPI_Receive(&hspi1,data_rec,8,1000);
+//	  HAL_SPI_Receive(&hspi1,data_rec,8,1000);
 
-//	  HAL_Delay(200);
-  if (data_rec[1]==2) {
+//	  HAL_Delay(50);
+/*  if (data_rec[1]==2) {
 		  HAL_Delay(200);
 		  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
+		  data_rec[1]=0;
 	  }
 
 		  else {
-			  HAL_Delay(200);
-  	  	  	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+//			  HAL_Delay(200);
+			  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
+  	  	  	  //HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 		  }
+*/
   }
   /* USER CODE END 3 */
 
@@ -192,12 +194,12 @@ static void MX_SPI1_Init(void)
 {
 
   hspi1.Instance = SPI1;
-  hspi1.Init.Mode = SPI_MODE_SLAVE;
+  hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
   hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;

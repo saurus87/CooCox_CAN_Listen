@@ -123,8 +123,8 @@ int main(void)
 
 //	  HAL_SPI_Receive(&hspi1,data_rec,11,100);
 
-
-HAL_SPI_Receive_IT(&hspi1,data_rec,11);
+	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
+	  HAL_SPI_Receive_IT(&hspi1,data_rec,11);
 
 
 //  HAL_Delay(1000);
@@ -248,7 +248,7 @@ void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi){
 
 	 if ((data_rec[1]==0)|(data_rec[0]==255)) {
 			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-			//HAL_Delay(100);
+			HAL_Delay(100);
 				  }
 
 			else {
