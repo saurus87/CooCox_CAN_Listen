@@ -30,7 +30,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/STM/projects/CooCox_CAN_Listen/SPI_Slave_USB/Src/main.c" title="main.c" tooltip="C:/STM/projects/CooCox_CAN_Listen/SPI_Slave_USB/Src/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SPI_Slave_USB/Src/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5484" selectionTopPixel="1500"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4736" selectionTopPixel="1500"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" partName="stm32f1xx_hal_spi.h" path="C:/GitHub/CAN_SPI_Master/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h" title="stm32f1xx_hal_spi.h" tooltip="C:/GitHub/CAN_SPI_Master/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
@@ -330,6 +330,9 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" tooltip="SPI_first/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
+<persistable path="/SPI_first/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
 <persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"/>
 </file>
@@ -347,9 +350,6 @@
 </file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\stdio.h">
 <persistable path="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\stdio.h" project="CAN_SPI_Master"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="CAN_SPI_Master/Src/main.c">
-<persistable path="/CAN_SPI_Master/Src/main.c"/>
 </file>
 <file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
 <persistable>&#x0A;<subPage horizontalPosition="0" selectedItemId="50" subPageIndex="2" verticalPosition="0"/>

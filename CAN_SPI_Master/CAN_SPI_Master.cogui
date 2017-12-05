@@ -11,58 +11,31 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">&#x0A;<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="218"/>
-</input>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/GitHub/CAN_SPI_Master/CAN_SPI_Master/Src/main.c" title="main.c" tooltip="C:/GitHub/CAN_SPI_Master/CAN_SPI_Master/Src/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/STM/projects/CooCox_CAN_Listen/CAN_SPI_Master/Src/main.c" title="main.c" tooltip="C:/STM/projects/CooCox_CAN_Listen/CAN_SPI_Master/Src/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CAN_SPI_Master/Src/main.c"/>
-<<<<<<< HEAD
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7485" selectionTopPixel="3535"/>
-=======
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6413" selectionTopPixel="4269"/>
->>>>>>> origin/master
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_can.h" partName="stm32f1xx_hal_can.h" path="C:/GitHub/CAN_SPI_Master/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h" title="stm32f1xx_hal_can.h" tooltip="C:/GitHub/CAN_SPI_Master/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="35825" selectionTopPixel="12121"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" partName="stm32f1xx_hal_spi.h" path="C:/GitHub/CAN_SPI_Master/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h" title="stm32f1xx_hal_spi.h" tooltip="C:/GitHub/CAN_SPI_Master/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="17839" selectionTopPixel="7310"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1575"/>
 </editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="8">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/CAN_SPI_Master"/>
-<element path="/CAN_SPI_Master/Drivers"/>
-<element path="/CAN_SPI_Master/Drivers/CMSIS"/>
-<element path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver"/>
-<element path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Src"/>
+<element path="/CAN_SPI_Master/Inc"/>
+<element path="/CAN_SPI_Master/Src"/>
 </expanded>
 <selection>
-<element path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c"/>
+<element path="/CAN_SPI_Master/Src/main.c"/>
 </selection>
 </viewState>
 </view>
 <view id="org.coocox.component.ui.ComponentView" partName="Components">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 <view id="org.coocox.component.ui.Help" partName="Help">
@@ -102,52 +75,42 @@
 <view id="org.coocox.component.ui.ComponentView"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
 <view id="org.coocox.component.ui.Help"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@18bbc62">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@16ad1d7">
 <folder activePageID="org.coocox.component.ui.ComponentView" appearance="2" expanded="2">
 <page content="org.coocox.component.ui.ComponentView" label="Components"/>
-<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.74980015" ratioLeft="938" ratioRight="313" relationship="2" relative="org.eclipse.ui.internal.ViewStack@18bbc62">
+<info folder="true" part="stickyFolderRight" ratio="0.7495544" ratioLeft="841" ratioRight="281" relationship="2" relative="org.eclipse.ui.internal.ViewStack@16ad1d7">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@108c249" ratio="0.72897196" ratioLeft="546" ratioRight="203" relationship="4" relative="org.eclipse.ui.internal.ViewStack@18bbc62">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic">
-<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.1681128" ratioLeft="155" ratioRight="767" relationship="2" relative="org.eclipse.ui.internal.ViewStack@18bbc62"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@31a215" ratio="0.73036647" ratioLeft="558" ratioRight="206" relationship="2" relative="org.coocox.builder.ui.exampleView">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<info part="org.eclipse.ui.console.ConsoleView" ratio="0.69914347" ratioLeft="653" ratioRight="281" relationship="4" relative="org.eclipse.ui.internal.ViewStack@16ad1d7"/>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.21925133" ratioLeft="246" ratioRight="876" relationship="2" relative="org.eclipse.ui.internal.ViewStack@16ad1d7"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@189dfb6" ratio="0.7191781" ratioLeft="630" ratioRight="246" relationship="2" relative="org.coocox.builder.ui.exampleView">
+<folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
 <page content="org.coocox.component.ui.Help" label="Help"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
 <page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.4496788" ratioLeft="420" ratioRight="514" relationship="4" relative="org.coocox.builder.ui.exampleView"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@fce164" ratio="0.369379" ratioLeft="345" ratioRight="589" relationship="4" relative="org.eclipse.ui.internal.ViewStack@18bbc62">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f6a403" ratio="0.369379" ratioLeft="345" ratioRight="589" relationship="4" relative="org.eclipse.ui.internal.ViewStack@16ad1d7">
 <folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
 <page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
-<presentation id="org.eclipse.ui.internal.presentations.classic.WorkbenchPresentationFactoryClassic">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 </presentation>
 </folder>
@@ -160,168 +123,9 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Src/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Src/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c"/>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="218"/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</editor>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="218"/>
-</editor>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="218"/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Src/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3922" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3877" y="32"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="1">
-<position info="not_deleted" x="7069" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="2521" y="17"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="1">
-<position info="not_deleted" x="8555" y="15"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="2521" y="17"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.c" index="3">
-<position info="not_deleted" x="16925" y="17"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="1">
-<position info="not_deleted" x="8555" y="15"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="2521" y="17"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="1">
-<position info="not_deleted" x="8912" y="15"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="2521" y="17"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="3207" y="4"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="4010" y="0"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.c" index="3">
-<position info="not_deleted" x="16925" y="17"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="1">
-<position info="not_deleted" x="8912" y="15"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="1">
-<position info="not_deleted" x="8555" y="15"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.c" index="3">
-<position info="not_deleted" x="16925" y="17"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="4010" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="6233" y="12"/>
-</item>
-<item historyLabel="Repository" index="4"/>
-<item historyLabel="Configuration" index="5"/>
-<item historyLabel="Repository" index="4"/>
-<item historyLabel="Repository" index="6"/>
-<item historyLabel="Repository" index="7"/>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="6233" y="12"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="3209" y="4"/>
-</item>
-<item historyLabel="stm32f1xx_hal_spi.h" index="9">
-<position info="not_deleted" x="17839" y="23"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="10">
-<position info="not_deleted" x="8555" y="15"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="4231" y="0"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="2793" y="0"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="4192" y="0"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="2772" y="23"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="11">
-<position info="not_deleted" x="8555" y="15"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="4189" y="0"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="11">
-<position info="not_deleted" x="8555" y="15"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="4189" y="0"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="7805" y="22"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.c" index="12">
-<position info="not_deleted" x="48716" y="22"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="7805" y="22"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.c" index="13">
+<item active="true" historyLabel="main.c" index="0">
 <position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.c" index="13">
-<position info="not_deleted" x="48716" y="22"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="7805" y="22"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="3231" y="4"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="7807" y="22"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="14">
-<position info="not_deleted" x="7526" y="0"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="7807" y="22"/>
-</item>
-<item historyLabel="stm32f1xx_hal_can.h" index="14">
-<position info="not_deleted" x="35825" y="22"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="7807" y="22"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="2525" y="0"/>
-</item>
-<item active="true" historyLabel="main.c" index="8">
-<position info="not_deleted" x="5960" y="25"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -330,7 +134,12 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<<<<<<< HEAD
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="CAN_SPI_Master/Src/main.c">
+<persistable path="/CAN_SPI_Master/Src/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" tooltip="SPI_first/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
+<persistable path="/SPI_first/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
 <persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"/>
 </file>
@@ -342,20 +151,12 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_can.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h">
 <persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"/>
-=======
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_can.c" tooltip="CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c">
-<persistable path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c"/>
->>>>>>> origin/master
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" tooltip="SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
-<persistable path="/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="_ansi.h" tooltip="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\_ansi.h">
+<persistable path="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\_ansi.h" project="CAN_SPI_Master"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.c" tooltip="SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c">
-<persistable path="/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c"/>
-</file>
-<<<<<<< HEAD
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="CAN_SPI_Master/Src/main.c">
-<persistable path="/CAN_SPI_Master/Src/main.c"/>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\stdio.h">
+<persistable path="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\stdio.h" project="CAN_SPI_Master"/>
 </file>
 <file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
 <persistable>&#x0A;<subPage horizontalPosition="0" selectedItemId="50" subPageIndex="2" verticalPosition="0"/>
@@ -379,57 +180,6 @@
 </file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="_ansi.h" tooltip="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\_ansi.h">
 <persistable path="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\_ansi.h" project="CAN_SPI_Master"/>
-=======
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" tooltip="CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
-<persistable path="/CAN_SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="SPI_Slave_USB/Src/main.c">
-<persistable path="/SPI_Slave_USB/Src/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="SPI_Slave_USB/main.c">
-<persistable path="/SPI_Slave_USB/main.c"/>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>
-<subPage/>
-</persistable>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>
-<subPage/>
-</persistable>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" tooltip="SPI_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
-<persistable path="/SPI_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
->>>>>>> origin/master
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="CAN_SPI_Master/Inc/main.h">
-<persistable path="/CAN_SPI_Master/Inc/main.h"/>
 </file>
 </mruList>
 </workbench>

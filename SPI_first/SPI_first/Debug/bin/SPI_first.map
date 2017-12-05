@@ -203,11 +203,10 @@ Discarded input sections
  .data          0x00000000        0x0 ..\obj\startup_stm32f10x_md.o
  .bss           0x00000000        0x0 ..\obj\startup_stm32f10x_md.o
  .text          0x00000000        0x0 ..\obj\main.o
+ .data          0x00000000        0x8 ..\obj\main.o
  .bss           0x00000000        0x0 ..\obj\main.o
  .text          0x00000000        0x0 ..\obj\stm32f1xx_hal_spi_ex.o
  .data          0x00000000        0x0 ..\obj\stm32f1xx_hal_spi_ex.o
- .text.SPI_ISCRCErrorValid
-                0x00000000       0x14 ..\obj\stm32f1xx_hal_spi_ex.o
  .text          0x00000000        0x0 ..\obj\stm32f1xx_hal_flash.o
  .data          0x00000000        0x0 ..\obj\stm32f1xx_hal_flash.o
  .bss           0x00000000        0x0 ..\obj\stm32f1xx_hal_flash.o
@@ -311,10 +310,8 @@ Discarded input sections
                 0x00000000       0x14 ..\obj\stm32f1xx_hal_spi.o
  .text.HAL_SPI_MspDeInit
                 0x00000000       0x14 ..\obj\stm32f1xx_hal_spi.o
- .text.HAL_SPI_Receive
-                0x00000000      0x31c ..\obj\stm32f1xx_hal_spi.o
- .text.HAL_SPI_TransmitReceive
-                0x00000000      0x498 ..\obj\stm32f1xx_hal_spi.o
+ .text.HAL_SPI_Transmit
+                0x00000000      0x280 ..\obj\stm32f1xx_hal_spi.o
  .text.HAL_SPI_Transmit_IT
                 0x00000000      0x128 ..\obj\stm32f1xx_hal_spi.o
  .text.HAL_SPI_Receive_IT
@@ -466,7 +463,7 @@ Linker script and memory map
 
                 0x20005000                _eram = 0x20005000
 
-.text           0x08000000     0x228f
+.text           0x08000000     0x280b
  *(.isr_vector)
  .isr_vector    0x08000000      0x10c ..\obj\startup_stm32f10x_md.o
                 0x08000000                g_pfnVectors
@@ -605,38 +602,44 @@ Linker script and memory map
                 0x080017c8                USART1_IRQHandler
                 0x080017c8                I2C1_ER_IRQHandler
                 0x080017c8                USBWakeUp_IRQHandler
- .text.main     0x080017d0       0x2c ..\obj\main.o
+ .text.main     0x080017d0       0x60 ..\obj\main.o
                 0x080017d0                main
  .text.SystemClock_Config
-                0x080017fc       0xa4 ..\obj\main.o
-                0x080017fc                SystemClock_Config
+                0x08001830       0xa4 ..\obj\main.o
+                0x08001830                SystemClock_Config
  .text.MX_SPI1_Init
-                0x080018a0       0x74 ..\obj\main.o
+                0x080018d4       0x74 ..\obj\main.o
  .text.MX_GPIO_Init
-                0x08001914       0x84 ..\obj\main.o
+                0x08001948       0x84 ..\obj\main.o
  .text._Error_Handler
-                0x08001998        0xc ..\obj\main.o
-                0x08001998                _Error_Handler
+                0x080019cc        0xc ..\obj\main.o
+                0x080019cc                _Error_Handler
  .text.HAL_SPI_Init
-                0x080019a4       0xcc ..\obj\stm32f1xx_hal_spi_ex.o
-                0x080019a4                HAL_SPI_Init
+                0x080019d8       0xcc ..\obj\stm32f1xx_hal_spi_ex.o
+                0x080019d8                HAL_SPI_Init
+ .text.SPI_ISCRCErrorValid
+                0x08001aa4       0x14 ..\obj\stm32f1xx_hal_spi_ex.o
+                0x08001aa4                SPI_ISCRCErrorValid
  .text.HAL_GPIO_Init
-                0x08001a70      0x2bc ..\obj\stm32f1xx_hal_gpio.o
-                0x08001a70                HAL_GPIO_Init
+                0x08001ab8      0x2bc ..\obj\stm32f1xx_hal_gpio.o
+                0x08001ab8                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08001d2c       0x30 ..\obj\stm32f1xx_hal_gpio.o
-                0x08001d2c                HAL_GPIO_WritePin
- .text.HAL_SPI_Transmit
-                0x08001d5c      0x280 ..\obj\stm32f1xx_hal_spi.o
-                0x08001d5c                HAL_SPI_Transmit
+                0x08001d74       0x30 ..\obj\stm32f1xx_hal_gpio.o
+                0x08001d74                HAL_GPIO_WritePin
+ .text.HAL_SPI_Receive
+                0x08001da4      0x31c ..\obj\stm32f1xx_hal_spi.o
+                0x08001da4                HAL_SPI_Receive
+ .text.HAL_SPI_TransmitReceive
+                0x080020c0      0x498 ..\obj\stm32f1xx_hal_spi.o
+                0x080020c0                HAL_SPI_TransmitReceive
  .text.SPI_WaitOnFlagUntilTimeout
-                0x08001fdc      0x148 ..\obj\stm32f1xx_hal_spi.o
+                0x08002558      0x148 ..\obj\stm32f1xx_hal_spi.o
  .text.HAL_MspInit
-                0x08002124       0x98 ..\obj\stm32f1xx_hal_msp.o
-                0x08002124                HAL_MspInit
+                0x080026a0       0x98 ..\obj\stm32f1xx_hal_msp.o
+                0x080026a0                HAL_MspInit
  .text.HAL_SPI_MspInit
-                0x080021bc       0x70 ..\obj\stm32f1xx_hal_msp.o
-                0x080021bc                HAL_SPI_MspInit
+                0x08002738       0x70 ..\obj\stm32f1xx_hal_msp.o
+                0x08002738                HAL_SPI_MspInit
  *(.init)
  *(.fini)
  *crtbegin.o(.ctors)
@@ -650,103 +653,101 @@ Linker script and memory map
  *(SORT(.dtors.*))
  *(.dtors)
  *(.rodata*)
- .rodata        0x0800222c       0x18 ..\obj\system_stm32f1xx.o
-                0x0800222c                AHBPrescTable
-                0x0800223c                APBPrescTable
- .rodata        0x08002244       0x12 ..\obj\stm32f1xx_hal_rcc.o
- *fill*         0x08002256        0x2 
- .rodata        0x08002258       0x37 ..\obj\main.o
+ .rodata        0x080027a8       0x18 ..\obj\system_stm32f1xx.o
+                0x080027a8                AHBPrescTable
+                0x080027b8                APBPrescTable
+ .rodata        0x080027c0       0x12 ..\obj\stm32f1xx_hal_rcc.o
+ *fill*         0x080027d2        0x2 
+ .rodata        0x080027d4       0x37 ..\obj\main.o
  *(.eh_fram e*)
 
-.glue_7         0x08002290        0x0
- .glue_7        0x08002290        0x0 linker stubs
+.glue_7         0x0800280c        0x0
+ .glue_7        0x0800280c        0x0 linker stubs
 
-.glue_7t        0x08002290        0x0
- .glue_7t       0x08002290        0x0 linker stubs
+.glue_7t        0x0800280c        0x0
+ .glue_7t       0x0800280c        0x0 linker stubs
 
-.vfp11_veneer   0x08002290        0x0
- .vfp11_veneer  0x08002290        0x0 linker stubs
+.vfp11_veneer   0x0800280c        0x0
+ .vfp11_veneer  0x0800280c        0x0 linker stubs
 
-.v4_bx          0x08002290        0x0
- .v4_bx         0x08002290        0x0 linker stubs
+.v4_bx          0x0800280c        0x0
+ .v4_bx         0x0800280c        0x0 linker stubs
 
-.iplt           0x08002290        0x0
- .iplt          0x08002290        0x0 ..\obj\stm32f1xx_hal_rcc_ex.o
+.iplt           0x0800280c        0x0
+ .iplt          0x0800280c        0x0 ..\obj\stm32f1xx_hal_rcc_ex.o
 
-.rel.dyn        0x08002290        0x0
- .rel.iplt      0x08002290        0x0 ..\obj\stm32f1xx_hal_rcc_ex.o
+.rel.dyn        0x0800280c        0x0
+ .rel.iplt      0x0800280c        0x0 ..\obj\stm32f1xx_hal_rcc_ex.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08002290                __exidx_start = .
+                0x0800280c                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08002290                __exidx_end = .
-                0x08002290                __etext = .
-                0x0800228f                _sidata = __etext
+                0x0800280c                __exidx_end = .
+                0x0800280c                __etext = .
+                0x0800280b                _sidata = __etext
 
-.data           0x20000000        0xc load address 0x0800228f
+.data           0x20000000        0x4 load address 0x0800280b
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = __data_start__
  *(vtable)
  *(.data*)
  .data          0x20000000        0x4 ..\obj\system_stm32f1xx.o
                 0x20000000                SystemCoreClock
- .data          0x20000004        0x8 ..\obj\main.o
-                0x20000004                data_tranc
-                0x2000000c                . = ALIGN (0x4)
+                0x20000004                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
                 [!provide]                PROVIDE (__preinit_array_end, .)
-                0x2000000c                . = ALIGN (0x4)
+                0x20000004                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
                 [!provide]                PROVIDE (__init_array_end, .)
-                0x2000000c                . = ALIGN (0x4)
+                0x20000004                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array)
                 [!provide]                PROVIDE (__fini_array_end, .)
  *(.jcr*)
-                0x2000000c                . = ALIGN (0x4)
-                0x2000000c                __data_end__ = .
-                0x2000000c                _edata = __data_end__
+                0x20000004                . = ALIGN (0x4)
+                0x20000004                __data_end__ = .
+                0x20000004                _edata = __data_end__
 
-.igot.plt       0x2000000c        0x0 load address 0x0800229c
- .igot.plt      0x2000000c        0x0 ..\obj\stm32f1xx_hal_rcc_ex.o
+.igot.plt       0x20000004        0x0 load address 0x08002810
+ .igot.plt      0x20000004        0x0 ..\obj\stm32f1xx_hal_rcc_ex.o
 
-.bss            0x2000000c       0x6c load address 0x0800229c
-                0x2000000c                . = ALIGN (0x4)
-                0x2000000c                __bss_start__ = .
-                0x2000000c                _sbss = __bss_start__
+.bss            0x20000004       0x6c load address 0x08002810
+                0x20000004                . = ALIGN (0x4)
+                0x20000004                __bss_start__ = .
+                0x20000004                _sbss = __bss_start__
  *(.bss*)
- .bss           0x2000000c        0x4 ..\obj\stm32f1xx_hal.o
- .bss           0x20000010        0x1 ..\obj\stm32f1xx_hal_spi_ex.o
-                0x20000010                uCRCErrorWorkaroundCheck
+ .bss           0x20000004        0x4 ..\obj\stm32f1xx_hal.o
+ .bss           0x20000008        0x1 ..\obj\stm32f1xx_hal_spi_ex.o
+                0x20000008                uCRCErrorWorkaroundCheck
  *(COMMON)
- *fill*         0x20000011        0x3 
- COMMON         0x20000014       0x64 ..\obj\main.o
-                0x20000014                i
-                0x20000018                hspi1
-                0x20000070                data_rec
-                0x20000078                . = ALIGN (0x4)
-                0x20000078                __bss_end__ = .
-                0x20000078                _ebss = __bss_end__
+ *fill*         0x20000009        0x3 
+ COMMON         0x2000000c       0x64 ..\obj\main.o
+                0x2000000c                i
+                0x20000010                hspi1
+                0x20000068                data_rec
+                0x20000070                . = ALIGN (0x4)
+                0x20000070                __bss_end__ = .
+                0x20000070                _ebss = __bss_end__
 
-.heap           0x20000078        0x0
-                0x20000078                __end__ = .
-                0x20000078                _end = __end__
-                0x20000078                end = __end__
+.heap           0x20000070        0x0
+                0x20000070                __end__ = .
+                0x20000070                _end = __end__
+                0x20000070                end = __end__
  *(.heap*)
-                0x20000078                __HeapLimit = .
+                0x20000070                __HeapLimit = .
 
-.co_stack       0x20000078      0x400 load address 0x08002308
-                0x20000078                . = ALIGN (0x8)
+.co_stack       0x20000070      0x400 load address 0x0800287c
+                0x20000070                . = ALIGN (0x8)
  *(.co_stack .co_stack.*)
- .co_stack      0x20000078      0x400 ..\obj\startup_stm32f10x_md.o
-                0x20000078                pulStack
+ .co_stack      0x20000070      0x400 ..\obj\startup_stm32f10x_md.o
+                0x20000070                pulStack
                 0x20005000                __StackTop = (ORIGIN (ram) + LENGTH (ram))
                 0x20004c00                __StackLimit = (__StackTop - SIZEOF (.co_stack))
                 [!provide]                PROVIDE (__stack, __StackTop)
@@ -840,18 +841,18 @@ OUTPUT(SPI_first.elf elf32-littlearm)
  .debug_ranges  0x00000318      0x148 ..\obj\stm32f1xx_hal_spi.o
  .debug_ranges  0x00000460       0x20 ..\obj\stm32f1xx_hal_msp.o
 
-.debug_line     0x00000000     0x3121
+.debug_line     0x00000000     0x311c
  .debug_line    0x00000000      0x3df ..\obj\stm32f1xx_hal.o
  .debug_line    0x000003df      0x218 ..\obj\stm32f1xx_it.o
  .debug_line    0x000005f7      0x4b0 ..\obj\stm32f1xx_hal_cortex.o
  .debug_line    0x00000aa7      0x237 ..\obj\system_stm32f1xx.o
  .debug_line    0x00000cde      0xb90 ..\obj\stm32f1xx_hal_rcc.o
  .debug_line    0x0000186e       0xa9 ..\obj\startup_stm32f10x_md.o
- .debug_line    0x00001917      0x33d ..\obj\main.o
- .debug_line    0x00001c54      0x2c4 ..\obj\stm32f1xx_hal_spi_ex.o
- .debug_line    0x00001f18      0x475 ..\obj\stm32f1xx_hal_gpio.o
- .debug_line    0x0000238d      0xac7 ..\obj\stm32f1xx_hal_spi.o
- .debug_line    0x00002e54      0x2cd ..\obj\stm32f1xx_hal_msp.o
+ .debug_line    0x00001917      0x338 ..\obj\main.o
+ .debug_line    0x00001c4f      0x2c4 ..\obj\stm32f1xx_hal_spi_ex.o
+ .debug_line    0x00001f13      0x475 ..\obj\stm32f1xx_hal_gpio.o
+ .debug_line    0x00002388      0xac7 ..\obj\stm32f1xx_hal_spi.o
+ .debug_line    0x00002e4f      0x2cd ..\obj\stm32f1xx_hal_msp.o
 
 .debug_str      0x00000000     0x19d7
  .debug_str     0x00000000      0x6cb ..\obj\stm32f1xx_hal.o

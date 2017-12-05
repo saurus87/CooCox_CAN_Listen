@@ -34,7 +34,7 @@
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
         </MemoryAreas>
-        <LocateLinkFile path="../../../coocox/coide/configuration/programdata/spi_usb/link.ld" type="0"/>
+        <LocateLinkFile path="../../../../coocox/coide/configuration/programdata/spi_usb/arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -74,8 +74,8 @@
     <Component id="439" name="CMSIS_Boot" path="" type="2"/>
   </Components>
   <Files>
-    <File name="Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h" path="Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h" type="1"/>
+    <File name="Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h" path="Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h" type="1"/>
     <File name="Middlewares/ST/STM32_USB_Device_Library/Core" path="" type="2"/>
     <File name="Drivers/CMSIS/Include/core_cm3.h" path="Drivers/CMSIS/Include/core_cm3.h" type="1"/>
     <File name="SPI_USB/Debug/obj/history.xml" path="SPI_USB/Debug/obj/history.xml" type="1"/>
@@ -89,26 +89,26 @@
     <File name="SPI_USB/Debug/obj/stm32f1xx_hal_rcc_ex.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_rcc_ex.o" type="1"/>
     <File name="SPI_USB/Debug/obj/main.o" path="SPI_USB/Debug/obj/main.o" type="1"/>
     <File name="Drivers/CMSIS/Include/core_cmSimd.h" path="Drivers/CMSIS/Include/core_cmSimd.h" type="1"/>
-    <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" type="1"/>
     <File name="SPI_USB/Debug/obj/usbd_ctlreq.o" path="SPI_USB/Debug/obj/usbd_ctlreq.o" type="1"/>
+    <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" type="1"/>
     <File name="SPI_USB/SPI_USB.elf.xcodeproj" path="" type="2"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h" type="1"/>
-    <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" type="1"/>
     <File name="Drivers/CMSIS/Include/core_cm4.h" path="Drivers/CMSIS/Include/core_cm4.h" type="1"/>
+    <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" type="1"/>
     <File name="SPI_USB/Debug/bin/history.xml" path="SPI_USB/Debug/bin/history.xml" type="1"/>
     <File name="Middlewares/ST/STM32_USB_Device_Library/Class/CDC" path="" type="2"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c" type="1"/>
-    <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h" type="1"/>
+    <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" type="1"/>
     <File name="Src/system_stm32f1xx.c" path="Src/system_stm32f1xx.c" type="1"/>
     <File name="Inc/usbd_cdc_if.h" path="Inc/usbd_cdc_if.h" type="1"/>
-    <File name="Drivers/CMSIS/Include/cmsis_gcc.h" path="Drivers/CMSIS/Include/cmsis_gcc.h" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f10x_md.c" path="cmsis_boot/startup/startup_stm32f10x_md.c" type="1"/>
+    <File name="Drivers/CMSIS/Include/cmsis_gcc.h" path="Drivers/CMSIS/Include/cmsis_gcc.h" type="1"/>
     <File name="Inc" path="" type="2"/>
     <File name="Middlewares" path="" type="2"/>
-    <File name="SPI_USB/Debug/obj/startup_stm32f10x_md.o" path="SPI_USB/Debug/obj/startup_stm32f10x_md.o" type="1"/>
     <File name="Drivers/CMSIS/Include/core_cm0plus.h" path="Drivers/CMSIS/Include/core_cm0plus.h" type="1"/>
+    <File name="SPI_USB/Debug/obj/startup_stm32f10x_md.o" path="SPI_USB/Debug/obj/startup_stm32f10x_md.o" type="1"/>
     <File name="Inc/usbd_conf.h" path="Inc/usbd_conf.h" type="1"/>
     <File name="Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h" path="Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h" type="1"/>
     <File name="SPI_USB/Debug/obj/stm32f1xx_hal_pcd_ex.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_pcd_ex.o" type="1"/>
@@ -118,8 +118,8 @@
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h" type="1"/>
     <File name="Drivers/CMSIS/Include/core_cmFunc.h" path="Drivers/CMSIS/Include/core_cmFunc.h" type="1"/>
     <File name="Middlewares/ST/STM32_USB_Device_Library/Class" path="" type="2"/>
-    <File name="SPI_USB/Debug/obj/stm32f1xx_hal_msp.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_msp.o" type="1"/>
     <File name="SPI_USB/Debug/obj/stm32f1xx_hal_gpio_ex.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_gpio_ex.o" type="1"/>
+    <File name="SPI_USB/Debug/obj/stm32f1xx_hal_msp.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_msp.o" type="1"/>
     <File name="Drivers/CMSIS/Include" path="" type="2"/>
     <File name="Inc/usb_device.h" path="Inc/usb_device.h" type="1"/>
     <File name="Inc/usbd_desc.h" path="Inc/usbd_desc.h" type="1"/>
@@ -149,9 +149,9 @@
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h" type="1"/>
     <File name="Src/usbd_desc.c" path="Src/usbd_desc.c" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc" path="" type="2"/>
+    <File name="SPI_USB/SPI_USB.elf.xcodeproj/project.pbxproj" path="SPI_USB/SPI_USB.elf.xcodeproj/project.pbxproj" type="1"/>
     <File name="Drivers/CMSIS/Include/arm_common_tables.h" path="Drivers/CMSIS/Include/arm_common_tables.h" type="1"/>
     <File name="SPI_USB/Debug/bin/SPI_USB.map" path="SPI_USB/Debug/bin/SPI_USB.map" type="1"/>
-    <File name="SPI_USB/SPI_USB.elf.xcodeproj/project.pbxproj" path="SPI_USB/SPI_USB.elf.xcodeproj/project.pbxproj" type="1"/>
     <File name="Drivers" path="" type="2"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="Drivers/CMSIS/Device/ST" path="" type="2"/>
@@ -159,15 +159,15 @@
     <File name="Src/usbd_cdc_if.c" path="Src/usbd_cdc_if.c" type="1"/>
     <File name="Drivers/CMSIS/Include/core_cm0.h" path="Drivers/CMSIS/Include/core_cm0.h" type="1"/>
     <File name="SPI_USB/Debug/obj/stm32f1xx_hal_spi_ex.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_spi_ex.o" type="1"/>
-    <File name="SPI_USB/Debug/obj/usbd_cdc.o" path="SPI_USB/Debug/obj/usbd_cdc.o" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c" type="1"/>
-    <File name="Drivers/CMSIS/Include/cmsis_armcc_V6.h" path="Drivers/CMSIS/Include/cmsis_armcc_V6.h" type="1"/>
+    <File name="SPI_USB/Debug/obj/usbd_cdc.o" path="SPI_USB/Debug/obj/usbd_cdc.o" type="1"/>
     <File name="SPI_USB/Debug/obj/stm32f1xx_hal_spi.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_spi.o" type="1"/>
+    <File name="Drivers/CMSIS/Include/cmsis_armcc_V6.h" path="Drivers/CMSIS/Include/cmsis_armcc_V6.h" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h" type="1"/>
     <File name="SPI_USB" path="" type="2"/>
     <File name="SPI_USB/Debug/obj/stm32f1xx_hal_dma.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_dma.o" type="1"/>
-    <File name="Drivers/CMSIS/Include/core_cm7.h" path="Drivers/CMSIS/Include/core_cm7.h" type="1"/>
     <File name="Src/stm32f1xx_it.c" path="Src/stm32f1xx_it.c" type="1"/>
+    <File name="Drivers/CMSIS/Include/core_cm7.h" path="Drivers/CMSIS/Include/core_cm7.h" type="1"/>
     <File name="Src/usbd_conf.c" path="Src/usbd_conf.c" type="1"/>
     <File name="SPI_USB/Debug/obj/stm32f1xx_ll_usb.o" path="SPI_USB/Debug/obj/stm32f1xx_ll_usb.o" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h" type="1"/>
@@ -196,8 +196,8 @@
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h" type="1"/>
-    <File name="Drivers/CMSIS/Include/core_sc000.h" path="Drivers/CMSIS/Include/core_sc000.h" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h" type="1"/>
+    <File name="Drivers/CMSIS/Include/core_sc000.h" path="Drivers/CMSIS/Include/core_sc000.h" type="1"/>
     <File name="Src/stm32f1xx_hal_msp.c" path="Src/stm32f1xx_hal_msp.c" type="1"/>
     <File name="SPI_USB/Debug/obj/usbd_ioreq.o" path="SPI_USB/Debug/obj/usbd_ioreq.o" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" type="1"/>
@@ -205,8 +205,8 @@
     <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver" path="" type="2"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" type="1"/>
-    <File name="SPI_USB/Debug/obj/stm32f1xx_hal_rcc.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_rcc.o" type="1"/>
     <File name="Inc/main.h" path="Inc/main.h" type="1"/>
+    <File name="SPI_USB/Debug/obj/stm32f1xx_hal_rcc.o" path="SPI_USB/Debug/obj/stm32f1xx_hal_rcc.o" type="1"/>
     <File name="Src" path="" type="2"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" path="Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" type="1"/>
     <File name="SPI_USB/Debug/obj/usbd_core.o" path="SPI_USB/Debug/obj/usbd_core.o" type="1"/>
