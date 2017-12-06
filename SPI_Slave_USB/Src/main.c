@@ -124,7 +124,7 @@ int main(void)
 //	  HAL_SPI_Receive(&hspi1,data_rec,11,100);
 
 	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
-	  HAL_SPI_Receive_IT(&hspi1,data_rec,11);
+	  HAL_SPI_Receive_IT(&hspi1,data_rec,8);
 
 
 //  HAL_Delay(1000);
@@ -196,7 +196,7 @@ static void MX_SPI1_Init(void)
 
   /* SPI1 parameter configuration*/
   hspi1.Instance = SPI1;
-  hspi1.Init.Mode = SPI_MODE_SLAVE;
+  hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
@@ -255,7 +255,7 @@ void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi){
 			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
 			}
 
-	 HAL_SPI_Receive_IT(&hspi1,data_rec,11);
+	 HAL_SPI_Receive_IT(&hspi1,data_rec,8);
 
 }
 

@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.7.2 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=SPI_first.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\SPI_first -TC:\CooCox\CoIDE\configuration\ProgramData\SPI_first/arm-gcc-link.ld -g">
-      <target file="SPI_first.elf" lastModified="16025d2b158">
-         <source file="..\obj\stm32f1xx_hal_rcc_ex.o" lastModified="16025d2a7d5"/>
-         <source file="..\obj\stm32f1xx_hal_pwr.o" lastModified="16025d2a844"/>
-         <source file="..\obj\stm32f1xx_hal.o" lastModified="16025d2a8ad"/>
-         <source file="..\obj\stm32f1xx_it.o" lastModified="16025d2a90c"/>
-         <source file="..\obj\stm32f1xx_hal_gpio_ex.o" lastModified="16025d2a969"/>
-         <source file="..\obj\stm32f1xx_hal_cortex.o" lastModified="16025d2a9dd"/>
-         <source file="..\obj\system_stm32f1xx.o" lastModified="16025d2aa26"/>
-         <source file="..\obj\stm32f1xx_hal_rcc.o" lastModified="16025d2aac7"/>
-         <source file="..\obj\startup_stm32f10x_md.o" lastModified="16025d2aaf6"/>
-         <source file="..\obj\main.o" lastModified="16025d2ab5e"/>
-         <source file="..\obj\stm32f1xx_hal_spi_ex.o" lastModified="16025d2abbf"/>
-         <source file="..\obj\stm32f1xx_hal_flash.o" lastModified="16025d2ac2f"/>
-         <source file="..\obj\stm32f1xx_hal_gpio.o" lastModified="16025d2ac9b"/>
-         <source file="..\obj\stm32f1xx_hal_dma.o" lastModified="16025d2ad18"/>
-         <source file="..\obj\stm32f1xx_hal_spi.o" lastModified="16025d2adde"/>
-         <source file="..\obj\stm32f1xx_hal_msp.o" lastModified="16025d2ae3f"/>
-         <source file="..\obj\stm32f1xx_hal_tim.o" lastModified="16025d2ae95"/>
-         <source file="..\obj\stm32f1xx_hal_flash_ex.o" lastModified="16025d2af11"/>
-         <source file="..\obj\stm32f1xx_hal_tim_ex.o" lastModified="16025d2af68"/>
+      <target file="SPI_first.elf" lastModified="1602afe3c9a">
+         <source file="..\obj\stm32f1xx_hal_rcc_ex.o" lastModified="1602afe32fb"/>
+         <source file="..\obj\stm32f1xx_hal_pwr.o" lastModified="1602afe3370"/>
+         <source file="..\obj\stm32f1xx_hal.o" lastModified="1602afe33e8"/>
+         <source file="..\obj\stm32f1xx_it.o" lastModified="1602afe3449"/>
+         <source file="..\obj\stm32f1xx_hal_gpio_ex.o" lastModified="1602afe34a5"/>
+         <source file="..\obj\stm32f1xx_hal_cortex.o" lastModified="1602afe351b"/>
+         <source file="..\obj\system_stm32f1xx.o" lastModified="1602afe355e"/>
+         <source file="..\obj\stm32f1xx_hal_rcc.o" lastModified="1602afe35fa"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="1602afe3625"/>
+         <source file="..\obj\main.o" lastModified="1602afe3689"/>
+         <source file="..\obj\stm32f1xx_hal_spi_ex.o" lastModified="1602afe36e6"/>
+         <source file="..\obj\stm32f1xx_hal_flash.o" lastModified="1602afe3759"/>
+         <source file="..\obj\stm32f1xx_hal_gpio.o" lastModified="1602afe37c6"/>
+         <source file="..\obj\stm32f1xx_hal_dma.o" lastModified="1602afe3843"/>
+         <source file="..\obj\stm32f1xx_hal_spi.o" lastModified="1602afe3910"/>
+         <source file="..\obj\stm32f1xx_hal_msp.o" lastModified="1602afe3975"/>
+         <source file="..\obj\stm32f1xx_hal_tim.o" lastModified="1602afe39ce"/>
+         <source file="..\obj\stm32f1xx_hal_flash_ex.o" lastModified="1602afe3a53"/>
+         <source file="..\obj\stm32f1xx_hal_tim_ex.o" lastModified="1602afe3aab"/>
       </target>
    </processor>
 </history>

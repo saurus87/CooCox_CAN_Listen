@@ -117,17 +117,19 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 
-//	  HAL_SPI_TransmitReceive(&hspi1,data_tranc,data_rec,8,1000);
+		HAL_SPI_TransmitReceive(&hspi1,(uint8_t*)data_tranc,(uint8_t*)data_rec,8,1000);
 
-//	  HAL_SPI_Transmit(&hspi1,(uint8_t*)data_tranc,8,1000);
+//		HAL_SPI_Transmit(&hspi1,(uint8_t*)data_tranc,8,1000);
 
-	  HAL_SPI_Receive(&hspi1,(uint8_t*)data_rec,8,1000);
+//		HAL_SPI_Receive(&hspi1,(uint8_t*)data_rec,8,1000);
 
-//	  HAL_Delay(50);
+//		HAL_SPI_Receive_IT(&hspi1,(uint8_t*)data_rec,8);
+
+	  HAL_Delay(10);
   if (data_rec[1]==2) {
 		  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
-		  HAL_Delay(200);
-		  data_rec[1]=0;
+		  HAL_Delay(1000);
+//		  data_rec[1]=0;
 	  }
 
 		  else {
@@ -241,6 +243,21 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi){
+
+//	 if ((data_rec[1]==2)|(data_rec[0]==1)) {
+			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+			HAL_Delay(100);
+/*				  }
+
+			else {
+			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
+			}
+*/
+	 HAL_SPI_Receive_IT(&hspi1,(uint8_t*)data_rec,8);
+
+}
 
 /* USER CODE END 4 */
 
