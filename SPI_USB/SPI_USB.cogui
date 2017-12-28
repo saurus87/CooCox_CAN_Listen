@@ -17,48 +17,45 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">&#x0A;<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="0"/>
-</input>
-</editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Src/main.c" title="main.c" tooltip="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Src/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SPI_USB/Src/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5047" selectionTopPixel="1815"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5553" selectionTopPixel="2220"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usb_device.c" partName="usb_device.c" path="C:/GitHub/CAN_SPI_Master/SPI_USB/Src/usb_device.c" title="usb_device.c" tooltip="C:/GitHub/CAN_SPI_Master/SPI_USB/Src/usb_device.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usb_device.c" partName="usb_device.c" path="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Src/usb_device.c" title="usb_device.c" tooltip="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Src/usb_device.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SPI_USB/Src/usb_device.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3412" selectionTopPixel="755"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3231" selectionTopPixel="572"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc_if.c" partName="usbd_cdc_if.c" path="C:/GitHub/CAN_SPI_Master/SPI_USB/Src/usbd_cdc_if.c" title="usbd_cdc_if.c" tooltip="C:/GitHub/CAN_SPI_Master/SPI_USB/Src/usbd_cdc_if.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc_if.c" partName="usbd_cdc_if.c" path="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Src/usbd_cdc_if.c" title="usbd_cdc_if.c" tooltip="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Src/usbd_cdc_if.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SPI_USB/Src/usbd_cdc_if.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="13034" selectionOffset="0" selectionTopPixel="4671"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12501" selectionTopPixel="5250"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc_if.h" partName="usbd_cdc_if.h" path="C:/GitHub/CAN_SPI_Master/SPI_USB/Inc/usbd_cdc_if.h" title="usbd_cdc_if.h" tooltip="C:/GitHub/CAN_SPI_Master/SPI_USB/Inc/usbd_cdc_if.h" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc_if.h" partName="usbd_cdc_if.h" path="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Inc/usbd_cdc_if.h" title="usbd_cdc_if.h" tooltip="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Inc/usbd_cdc_if.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SPI_USB/Inc/usbd_cdc_if.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4253" selectionTopPixel="1795"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4134" selectionTopPixel="1336"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc.c" partName="usbd_cdc.c" path="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" title="usbd_cdc.c" tooltip="C:/STM/projects/CooCox_CAN_Listen/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="26137" selectionTopPixel="12642"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="28203" selectionTopPixel="11131"/>
 </editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="1" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
+<viewState CommonNavigator.LINKING_ENABLED="1" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="9">
 <expanded>
 <element path="/SPI_USB"/>
 <element path="/SPI_USB/cmsis_boot"/>
 <element path="/SPI_USB/cmsis_boot/startup"/>
+<element path="/SPI_USB/Inc"/>
 <element path="/SPI_USB/Middlewares"/>
 <element path="/SPI_USB/Middlewares/ST"/>
 <element path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library"/>
 <element path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class"/>
 <element path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC"/>
+<element path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
 <element path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src"/>
 <element path="/SPI_USB/Src"/>
 </expanded>
@@ -70,9 +67,14 @@
 <view id="org.coocox.component.ui.ComponentView" partName="Components">
 <viewState/>
 </view>
+<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug"/>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
@@ -132,7 +134,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f3f891" ratio="0.7994723" ratioLeft="606" ratioRight="152" relationship="4" relative="org.eclipse.ui.internal.ViewStack@edd478">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f3f891" ratio="0.77121377" ratioLeft="718" ratioRight="213" relationship="4" relative="org.eclipse.ui.internal.ViewStack@edd478">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -140,8 +142,8 @@
 </presentation>
 </folder>
 </info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.13404657" ratioLeft="213" ratioRight="1376" relationship="2" relative="org.eclipse.ui.internal.ViewStack@edd478"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@fe2f6b" ratio="0.73380035" ratioLeft="419" ratioRight="152" relationship="2" relative="org.coocox.builder.ui.exampleView">
+<info part="org.coocox.builder.ui.exampleView" ratio="0.20945945" ratioLeft="248" ratioRight="936" relationship="2" relative="org.eclipse.ui.internal.ViewStack@edd478"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@fe2f6b" ratio="0.76235294" ratioLeft="648" ratioRight="202" relationship="2" relative="org.coocox.builder.ui.exampleView">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.coocox.component.ui.Help" label="Help"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -166,175 +168,271 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.coocox.codebugger.configuration.ui.Perspective" id="org.coocox.codebugger.configuration.perspective" label="CoDebugger"/>
+<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
+<alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFile"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFolder"/>
+<hide_menu_item_id id="org.coocox.builder.ui.openFile"/>
+<hide_menu_item_id id="org.eclipse.ui.file.save"/>
+<hide_menu_item_id id="org.eclipse.ui.file.saveAs"/>
+<hide_menu_item_id id="org.eclipse.ui.file.saveAll"/>
+<hide_menu_item_id id="org.coocox.builder.rcp.projectMenu"/>
+<hide_menu_item_id id="org.coocox.builder.rcp.flashMenu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.showHelpViewAction"/>
+<hide_menu_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<hide_menu_item_id id="org.coocox.builder.ui.debug"/>
+<hide_menu_item_id id="org.coocox.builder.ui.build"/>
+<hide_menu_item_id id="org.coocox.builder.ui.rebuild"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
+<hide_menu_item_id id="org.coocox.welcome.ui.action.welcome"/>
+<hide_menu_item_id id="org.coocox.welcome.ui.action.repository"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.newProject"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.newFile"/>
+<hide_toolbar_item_id id="org.eclipse.ui.file.save"/>
+<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.rebuild"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.debug"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideFlashEraseAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.actions.TargetManageAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
+<hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
+<hide_toolbar_item_id id="org.coocox.welcome.ui.action.repository"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.coocox.codebugger.trace.ui.traceview"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<fastViewBars/>
+<viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@b74e">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74978936" ratioLeft="890" ratioRight="297" relationship="2" relative="org.eclipse.ui.internal.ViewStack@b74e">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@e2159a" ratio="0.69914347" ratioLeft="653" ratioRight="281" relationship="4" relative="org.eclipse.ui.internal.ViewStack@b74e">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@f86848" ratio="0.49957877" ratioLeft="593" ratioRight="594" relationship="2" relative="org.eclipse.ui.internal.ViewStack@e2159a">&#x0A;<folder activePageID="org.coocox.codebugger.trace.ui.traceview" appearance="2" expanded="2">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@865fe1" ratio="0.74978936" ratioLeft="890" ratioRight="297" relationship="2" relative="org.eclipse.ui.internal.ViewStack@b74e">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.3" ratioLeft="267" ratioRight="623" relationship="2" relative="org.eclipse.ui.internal.ViewStack@b74e"/>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usb_device.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usbd_cdc_if.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Inc/usbd_cdc_if.h"/>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usb_device.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usbd_cdc_if.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"/>
+<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
+<subPage/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usbd_cdc_if.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Inc/usbd_cdc_if.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usb_device.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usbd_cdc_if.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Inc/usbd_cdc_if.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usb_device.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usb_device.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usbd_cdc_if.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Inc/main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usb_device.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usbd_cdc_if.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/usb_device.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SPI_USB/Src/main.c"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3869" y="4"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4395" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="7722" y="12"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="7815" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3173" y="0"/>
-</item>
-<item historyLabel="stm32f1xx_hal_spi.h" index="1">
-<position info="not_deleted" x="7270" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3175" y="0"/>
-</item>
-<item historyLabel="stm32f1xx_hal_spi.h" index="1">
-<position info="not_deleted" x="7270" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3175" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3869" y="4"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="8493" y="12"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3485" y="12"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4396" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="7722" y="12"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="8493" y="12"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="7722" y="12"/>
-</item>
-<item historyLabel="stm32f1xx_hal_spi.h" index="1">
-<position info="not_deleted" x="7270" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="7722" y="12"/>
-</item>
-<item historyLabel="stm32f1xx_hal_spi.h" index="1">
-<position info="not_deleted" x="7270" y="0"/>
-</item>
-<item historyLabel="stm32f1xx_hal_spi.h" index="1">
-<position info="not_deleted" x="6092" y="0"/>
-</item>
-<item historyLabel="stm32f1xx_hal_spi.h" index="1">
-<position info="not_deleted" x="8250" y="18"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="7722" y="12"/>
-</item>
-<item historyLabel="usb_device.c" index="2">
-<position info="not_deleted" x="3089" y="0"/>
-</item>
-<item historyLabel="usbd_cdc_if.c" index="3">
-<position info="not_deleted" x="4902" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="7809" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="8493" y="12"/>
-</item>
-<item historyLabel="usb_device.c" index="2">
-<position info="not_deleted" x="3089" y="0"/>
-</item>
-<item historyLabel="usbd_cdc_if.c" index="3">
-<position info="not_deleted" x="4902" y="0"/>
-</item>
-<item historyLabel="usbd_cdc_if.h" index="4">
+<item historyLabel="usbd_cdc_if.h" index="0">
 <position info="not_deleted" x="4253" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="8493" y="12"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="8687" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3413" y="18"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5904" y="18"/>
-</item>
-<item historyLabel="Repository" index="5"/>
-<item historyLabel="Configuration" index="6"/>
-<item historyLabel="Configuration" index="7"/>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="5904" y="18"/>
-</item>
-<item historyLabel="stm32f1xx_hal_spi.h" index="9">
-<position info="not_deleted" x="8250" y="18"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="5904" y="18"/>
-</item>
-<item historyLabel="usb_device.c" index="10">
-<position info="not_deleted" x="3089" y="0"/>
-</item>
-<item historyLabel="usbd_cdc_if.c" index="11">
-<position info="not_deleted" x="0" y="13034"/>
-</item>
-<item historyLabel="usb_device.c" index="10">
-<position info="not_deleted" x="3520" y="0"/>
-</item>
-<item historyLabel="usbd_cdc.c" index="12">
-<position info="not_deleted" x="28365" y="0"/>
-</item>
-<item historyLabel="usbd_cdc_if.h" index="13">
-<position info="not_deleted" x="4253" y="0"/>
-</item>
-<item historyLabel="usbd_cdc.c" index="12">
+<item historyLabel="usbd_cdc.c" index="1">
 <position info="not_deleted" x="26137" y="0"/>
 </item>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="5904" y="18"/>
+<item historyLabel="usbd_cdc.h" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="3798" y="6"/>
+<item historyLabel="Repository" index="3"/>
+<item historyLabel="usbd_cdc.h" index="2">
+<position info="not_deleted" x="2222" y="0"/>
 </item>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="3816" y="6"/>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="5134" y="0"/>
 </item>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="3798" y="6"/>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="5893" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="14">
+<item historyLabel="main.c" index="4">
 <position info="not_deleted" x="3869" y="4"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="9043" y="20"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="9291" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="3869" y="4"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="5">
+<position info="not_deleted" x="9598" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.h" index="6">
+<position info="not_deleted" x="4253" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="5573" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="9443" y="14"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="5893" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="3869" y="4"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="5692" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="9043" y="20"/>
+</item>
+<item historyLabel="usb_device.c" index="7">
+<position info="not_deleted" x="3231" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="8">
+<position info="not_deleted" x="9883" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.h" index="9">
+<position info="not_deleted" x="4253" y="0"/>
+</item>
+<item historyLabel="usbd_cdc.c" index="10">
+<position info="not_deleted" x="26137" y="0"/>
+</item>
+<item historyLabel="usbd_cdc.h" index="11">
+<position info="not_deleted" x="2222" y="0"/>
+</item>
+<item historyLabel="usbd_cdc.c" index="10">
+<position info="not_deleted" x="28203" y="0"/>
+</item>
+<item historyLabel="usb_device.c" index="7">
+<position info="not_deleted" x="3354" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="8">
+<position info="not_deleted" x="9828" y="0"/>
+</item>
+<item historyLabel="usb_device.c" index="12">
+<position info="not_deleted" x="3354" y="0"/>
+</item>
+<item historyLabel="main.c" index="13">
+<position info="not_deleted" x="9319" y="0"/>
+</item>
+<item historyLabel="usb_device.c" index="14">
+<position info="not_deleted" x="3354" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="15">
+<position info="not_deleted" x="5109" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="15">
+<position info="not_deleted" x="4845" y="0"/>
+</item>
+<item historyLabel="main.c" index="13">
+<position info="not_deleted" x="5199" y="23"/>
+</item>
+<item historyLabel="usb_device.c" index="14">
+<position info="not_deleted" x="3167" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="15">
+<position info="not_deleted" x="4833" y="23"/>
+</item>
+<item historyLabel="usb_device.c" index="14">
+<position info="not_deleted" x="3167" y="0"/>
+</item>
+<item historyLabel="main.c" index="13">
+<position info="not_deleted" x="5271" y="0"/>
+</item>
+<item historyLabel="usb_device.c" index="14">
+<position info="not_deleted" x="3231" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="15">
+<position info="not_deleted" x="4833" y="23"/>
+</item>
+<item historyLabel="main.c" index="13">
+<position info="not_deleted" x="5271" y="0"/>
+</item>
+<item historyLabel="main.h" index="16">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="13">
+<position info="not_deleted" x="5271" y="0"/>
+</item>
+<item historyLabel="usb_device.c" index="17">
+<position info="not_deleted" x="3231" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="18">
+<position info="not_deleted" x="4833" y="23"/>
+</item>
+<item historyLabel="main.c" index="19">
+<position info="not_deleted" x="5271" y="0"/>
+</item>
+<item historyLabel="usb_device.c" index="20">
+<position info="not_deleted" x="3231" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="18">
+<position info="not_deleted" x="5164" y="0"/>
+</item>
+<item historyLabel="main.c" index="21">
+<position info="not_deleted" x="5553" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_if.c" index="18">
+<position info="not_deleted" x="12501" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="21">
+<position info="not_deleted" x="5553" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -343,52 +441,47 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" tooltip="SPI_first/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
-<persistable path="/SPI_first/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc_if.c" tooltip="SPI_Slave/Src/usbd_cdc_if.c">
+<persistable path="/SPI_Slave/Src/usbd_cdc_if.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
-<persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc.h" tooltip="SPI_Slave/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h">
+<persistable path="/SPI_Slave/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_def.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
-<persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_desc.h" tooltip="stm32f1-usb-usbtest/usb_desc.h">
+<persistable path="/stm32f1-usb-usbtest/usb_desc.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_can.c" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c">
-<persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_core.c" tooltip="stm32f1-usb-usbtest/usb_core.c">
+<persistable path="/stm32f1-usb-usbtest/usb_core.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_can.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h">
-<persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f10x_md.c" tooltip="stm32f1-usb-usbtest/cmsis_boot/startup/startup_stm32f10x_md.c">
+<persistable path="/stm32f1-usb-usbtest/cmsis_boot/startup/startup_stm32f10x_md.c"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="_ansi.h" tooltip="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\_ansi.h">
-<persistable path="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\_ansi.h" project="CAN_SPI_Master"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_desc.c" tooltip="stm32f1-usb-usbtest/usb_desc.c">
+<persistable path="/stm32f1-usb-usbtest/usb_desc.c"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\stdio.h">
-<persistable path="C:\STM\gcc-arm-none-eabi-5_4-2016q3-20160926-win32\arm-none-eabi\include\stdio.h" project="CAN_SPI_Master"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f10x_md.c" tooltip="SPI_Slave/cmsis_boot/startup/startup_stm32f10x_md.c">
+<persistable path="/SPI_Slave/cmsis_boot/startup/startup_stm32f10x_md.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f103xb.s" tooltip="SPI_Slave/startup/startup_stm32f103xb.s">
+<persistable path="/SPI_Slave/startup/startup_stm32f103xb.s"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal.c" tooltip="SPI_Slave/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+<persistable path="/SPI_Slave/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_def.h" tooltip="SPI_Slave/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+<persistable path="/SPI_Slave/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_def.h" tooltip="SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+<persistable path="/SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_def.h" tooltip="C:\STM\projects\TEST\SPI_Master\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h">
+<persistable path="C:\STM\projects\TEST\SPI_Master\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h" project="SPI_Master"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_spi.h" tooltip="SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
+<persistable path="/SPI_Master/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="CAN_SPI_Master/Src/main.c">
 <persistable path="/CAN_SPI_Master/Src/main.c"/>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage horizontalPosition="0" selectedItemId="50" subPageIndex="2" verticalPosition="0"/>
-</persistable>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage horizontalPosition="0" selectedItemId="50" subPageIndex="2" verticalPosition="0"/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
-<persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_def.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
-<persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_can.c" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c">
-<persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f1xx_hal_can.h" tooltip="CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h">
-<persistable path="/CAN_Transmit/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_rcc.c" tooltip="Example_GPIO/stm_lib/src/stm32f10x_rcc.c">
-<persistable path="/Example_GPIO/stm_lib/src/stm32f10x_rcc.c"/>
 </file>
 </mruList>
 </workbench>

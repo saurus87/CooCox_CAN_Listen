@@ -151,11 +151,11 @@ int main(void)
 
 
 //	  HAL_Delay(5000);
-/*	  while (1){
+	  while (1){
 		  HAL_Delay(100);
 		  CDC_add_buf_to_transmit();
 	  }
-*/
+
 
 //	  CDC_Transmit_FS(&tranc,strlen(tranc));
 
@@ -169,7 +169,7 @@ int main(void)
 //	  CDC_Transmit_FS(&str_tx,strlen(str_tx));
 
 //	  CDC_Transmit_FS((uint8_t*)data_tranc,8);
-//	  CDC_Transmit_FS(&data_tranc,8);//–¿¡Œ“¿≈“
+	  CDC_Transmit_FS(&data_tranc,8);//–¿¡Œ“¿≈“
 //	  CDC_Transmit_FS((unsigned char*)data_tranc, strlen(data_tranc));
 //	  CDC_Transmit_FS(12,8);
 	  HAL_Delay(1000);
