@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>C:\GitHub\CAN_SPI_Master\SPI_Slave_USB\\SPI_Slave_USB</ProjectName>
+<ProjectName>C:\STM\projects\CooCox_CAN_Listen\SPI_Slave_USB\\SPI_Slave_USB</ProjectName>
 <CMSIS>..\Drivers\CMSIS</CMSIS>
-<HAL_Driver>C:\Users\AdmiN\STM32Cube\Repository\STM32Cube_FW_F1_V1.6.0\Drivers\CMSIS</HAL_Driver>
+<HAL_Driver>C:\Users\admin3d\STM32Cube\Repository\STM32Cube_FW_F1_V1.6.0\Drivers\CMSIS</HAL_Driver>
 
 <Toolchain>TrueSTUDIO</Toolchain>
 <Version>0</Version>
