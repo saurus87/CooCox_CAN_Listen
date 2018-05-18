@@ -9,7 +9,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * COPYRIGHT(c) 2017 STMicroelectronics
+  * COPYRIGHT(c) 2018 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -45,7 +45,7 @@
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
-//CAN_HandleTypeDef hcan;
+CAN_HandleTypeDef hcan;
 
 SPI_HandleTypeDef hspi1;
 
@@ -53,7 +53,7 @@ SPI_HandleTypeDef hspi1;
 /* Private variables ---------------------------------------------------------*/
 uint8_t can_rx_data[200];
 uint8_t can_tx_data[200];
-uint8_t can_to_spi_buffer[30];
+uint8_t can_to_spi_buffer[30]={8,7,6,5,4,3,2,1};
 uint8_t temp_buf[30];
 
 /* USER CODE END PV */
@@ -118,16 +118,19 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 
-//	  HAL_Delay(1000);
+//	  HAL_Delay(100);
 
 
 	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+//	  HAL_SPI_Transmit(&hspi1,can_to_spi_buffer,8,100);
 
-	  can_to_spi_buffer[0] = 255/*(temp_can.StdId)>>8*/;
-	  can_to_spi_buffer[1] = 255/*(temp_can.StdId)*/;
+//	  HAL_Delay(1);
+
+//	  can_to_spi_buffer[0] = 11/*(temp_can.StdId)>>8*/;
+//	  can_to_spi_buffer[1] = 11/*(temp_can.StdId)*/;
 
 
-	HAL_SPI_TransmitReceive(&hspi1,/*(uint8_t*)*/can_to_spi_buffer,temp_buf,11,100);
+	  HAL_SPI_TransmitReceive(&hspi1,/*(uint8_t*)*/can_to_spi_buffer,temp_buf,8,1000);
 
 
   }
@@ -147,7 +150,7 @@ void SystemClock_Config(void)
     */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV2;
+  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
@@ -162,11 +165,11 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV4;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
@@ -259,7 +262,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef *hcan)
+/*void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef *hcan)
 {
 	uint32_t num_bytes = 0;
 	uint8_t buf[200];
@@ -285,7 +288,7 @@ void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef *hcan)
 
 	HAL_SPI_Transmit(&hspi1,(uint8_t*)buf,11,1000);
 
-}
+}*/
 
 
 /* USER CODE END 4 */

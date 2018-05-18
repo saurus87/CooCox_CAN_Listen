@@ -56,17 +56,17 @@
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
-CAN_HandleTypeDef hcan;
-
 SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 int i;
-CanRxMsgTypeDef retrans_buf;
+//CanRxMsgTypeDef retrans_buf;
 uint8_t data_tranc[8]={33,80,80,33,33,33,33,33};
 uint8_t* p_data[8];
 uint8_t data_rec[8];
+char str_tx[128];
+int str_tx_len, i=1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -112,6 +112,7 @@ int main(void)
   MX_USB_DEVICE_Init();
 
   /* USER CODE BEGIN 2 */
+  HAL_SPI_Receive_IT(&hspi1,data_rec,8);
 
   /* USER CODE END 2 */
 
@@ -119,18 +120,28 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  if (hspi1.State != HAL_SPI_STATE_BUSY_RX) {
+		  HAL_SPI_Receive_IT(&hspi1,data_rec,8);
+	  }
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-//	  HAL_SPI_Receive(&hspi1,data_rec,8,1000);
+//	  HAL_SPI_Receive_IT(&hspi1,data_rec,8);
+/*	  str_tx_len=sprintf((char*)str_tx," While %d ",hspi1.State,"\r");
+	  CDC_Transmit_FS((char*)str_tx, str_tx_len);
+*/
+
+/*	  HAL_SPI_Receive(&hspi1,data_rec,8,1000);
+	  str_tx_len=sprintf((char*)str_tx,"%d %d %d %d %d %d %d %d %s",data_rec[0],data_rec[1],data_rec[2],data_rec[3],data_rec[4],data_rec[5],data_rec[6],data_rec[7],"\r");
+	  CDC_Transmit_FS((char*)str_tx, str_tx_len);
+	  */
 
 //	  HAL_SPI_Receive(&hspi1,data_rec,11,100);
 
-	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
-	  HAL_SPI_Receive_IT(&hspi1,data_rec,8);
+//	  HAL_SPI_Receive_IT(&hspi1,data_rec,8);
 
 
-//  HAL_Delay(1000);
+//  HAL_Delay(10);
 
   }
   /* USER CODE END 3 */
@@ -165,8 +176,8 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV4;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
@@ -249,17 +260,17 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi){
+//	uint8_t data_rec[8];
 
-	 if ((data_rec[1]==0)|(data_rec[0]==255)) {
-			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-			HAL_Delay(100);
-				  }
+	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 
-			else {
-			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
-			}
+	str_tx_len=sprintf((char*)str_tx,"%d %d %d %d %d %d %d %d %s",data_rec[0],data_rec[1],data_rec[2],data_rec[3],data_rec[4],data_rec[5],data_rec[6],data_rec[7],"\r");
+	CDC_Transmit_FS((char*)str_tx, str_tx_len);
 
-	 HAL_SPI_Receive_IT(&hspi1,data_rec,8);
+	str_tx_len=sprintf((char*)str_tx," Interr %d ",hspi1.State,"\r");
+	CDC_Transmit_FS((char*)str_tx, str_tx_len);
+
+	HAL_SPI_Receive_IT(&hspi1,data_rec,8);
 
 }
 

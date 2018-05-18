@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>C:\GitHub\CAN_SPI_Master\CAN_SPI_Master\\CAN_SPI_Master</ProjectName>
+<ProjectName>C:\STM\projects\CooCox_CAN_Listen\CAN_SPI_Master\\CAN_SPI_Master</ProjectName>
+<ProjectNature>C</ProjectNature> 
 <CMSIS>..\Drivers\CMSIS</CMSIS>
-<HAL_Driver>C:\Users\AdmiN\STM32Cube\Repository\STM32Cube_FW_F1_V1.6.0\Drivers\CMSIS</HAL_Driver>
-
+<HAL_Driver>C:\Users\admin3d\STM32Cube\Repository\STM32Cube_FW_F1_V1.6.0\Drivers\CMSIS</HAL_Driver>
 <Toolchain>SW4STM32</Toolchain>
 <Version>0</Version>
 
 <filestoremove>
-	<file>
-	</file>
+    <file>
+    </file>
 </filestoremove>
 
 <inctoremove>
@@ -31,7 +31,7 @@
 			
     <usedDebug>true</usedDebug>
     	<debugprobe></debugprobe>
-    <optimization>6</optimization>
+    <optimization>2</optimization>
     <icfloc>0</icfloc>
     <Adefines>
         <define></define>
@@ -72,13 +72,14 @@
 
     <underRoot>true</underRoot>
     	<copyAsReference>false</copyAsReference>
+ 
 	  		<sourceEntries>
 		    	<sourceEntry>
 		    		<name>Inc</name>
 		    	</sourceEntry>
-		    	<sourceEntry>
-		    		<name>Src</name>
-		    	</sourceEntry>
+                <sourceEntry>
+                        <name>Src</name>
+                </sourceEntry>
 		    	<sourceEntry>
 		    		<name>Drivers</name>
 		    	</sourceEntry>
