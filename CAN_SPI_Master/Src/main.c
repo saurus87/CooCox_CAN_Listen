@@ -56,6 +56,14 @@ uint8_t can_tx_data[200];
 uint8_t can_to_spi_buffer[30]={8,7,6,5,4,3,2,1};
 uint8_t temp_buf[30];
 
+
+uint8_t can_rx_data[200];
+uint8_t can_tx_data[200];
+static CanTxMsgTypeDef canTxMessage;
+static CanRxMsgTypeDef canRxMessage;
+uint16_t CAN_ID;
+uint8_t CAN_DLC;
+uint8_t DATA[8];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -112,6 +120,34 @@ int main(void)
 
   temp_can.StdId = 0xFF;
 
+
+  hcan.pTxMsg = &canTxMessage;
+  hcan.pRxMsg = &canRxMessage;
+
+	CAN_FilterConfTypeDef canFilterConfig;
+	canFilterConfig.FilterNumber = 0;
+	canFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST;
+	canFilterConfig.FilterScale = CAN_FILTERSCALE_16BIT;
+	canFilterConfig.FilterIdHigh = 0x53A<<5;
+	canFilterConfig.FilterIdLow = 0x54C<<5;
+	canFilterConfig.FilterMaskIdHigh = 0x53D<<5;
+	canFilterConfig.FilterMaskIdLow = 0x54F<<5;
+	canFilterConfig.FilterFIFOAssignment = 0;
+	canFilterConfig.FilterActivation = ENABLE;
+	canFilterConfig.BankNumber = 1;
+	HAL_CAN_ConfigFilter(&hcan, &canFilterConfig);
+
+	canFilterConfig.FilterNumber = 1;
+	canFilterConfig.FilterIdHigh = 0xA<<5;
+	canFilterConfig.FilterIdLow = 0x33<<5;
+	canFilterConfig.FilterMaskIdHigh = 0xA<<5;
+	canFilterConfig.FilterMaskIdLow = 0x33<<5;
+	HAL_CAN_ConfigFilter(&hcan, &canFilterConfig);
+
+	HAL_CAN_Receive_IT(&hcan, CAN_FIFO0) ;
+
+
+
   while (1)
   {
   /* USER CODE END WHILE */
@@ -121,7 +157,7 @@ int main(void)
 //	  HAL_Delay(100);
 
 
-	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+//	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 //	  HAL_SPI_Transmit(&hspi1,can_to_spi_buffer,8,100);
 
 //	  HAL_Delay(1);
@@ -130,7 +166,7 @@ int main(void)
 //	  can_to_spi_buffer[1] = 11/*(temp_can.StdId)*/;
 
 
-	  HAL_SPI_TransmitReceive(&hspi1,/*(uint8_t*)*/can_to_spi_buffer,temp_buf,8,1000);
+//	  HAL_SPI_TransmitReceive(&hspi1,/*(uint8_t*)*/can_to_spi_buffer,temp_buf,8,1000);
 
 
   }
@@ -262,7 +298,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-/*void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef *hcan)
+void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef *hcan)
 {
 	uint32_t num_bytes = 0;
 	uint8_t buf[200];
@@ -271,7 +307,7 @@ static void MX_GPIO_Init(void)
 
 	if (hcan->pRxMsg->StdId == 1)
 	{
-		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
+		//HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
 	}
 
 	buf[0] = (hcan->pRxMsg->StdId)>>8;
@@ -286,9 +322,11 @@ static void MX_GPIO_Init(void)
 	buf[9] = (hcan->pRxMsg->Data[6]);
 	buf[10] = (hcan->pRxMsg->Data[7]);
 
-	HAL_SPI_Transmit(&hspi1,(uint8_t*)buf,11,1000);
+//	HAL_SPI_Transmit(&hspi1,(uint8_t*)buf,11,1000);
+	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+	HAL_SPI_TransmitReceive(&hspi1,/*(uint8_t*)*/buf,temp_buf,11,1000);
 
-}*/
+}
 
 
 /* USER CODE END 4 */
