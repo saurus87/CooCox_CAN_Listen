@@ -92,46 +92,6 @@
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/SPI_Slave_USB/Src/main.c" type="1"/>
-<marker lineNumber="265" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="enabled" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
-<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
-<attrib name="workingset_name" value=""/>
-<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
-<attrib name="persistant" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
-<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
-<attrib name="message" value="Line breakpoint: main.c [line: 262]"/>
-<attrib name="registered" value="true"/>
-<attrib name="path" value="/SPI_Slave_USB/Src/main.c"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\STM\projects\CooCox_CAN_Listen\SPI_Slave_USB\Src\main.c"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
-</marker>
-</breakpoint>
-<breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/SPI_Slave_USB/Src/main.c" type="1"/>
-<marker lineNumber="273" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="enabled" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
-<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
-<attrib name="workingset_name" value=""/>
-<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
-<attrib name="persistant" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
-<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
-<attrib name="message" value="Line breakpoint: main.c [line: 270]"/>
-<attrib name="registered" value="true"/>
-<attrib name="path" value="/SPI_Slave_USB/Src/main.c"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\STM\projects\CooCox_CAN_Listen\SPI_Slave_USB\Src\main.c"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
-</marker>
-</breakpoint>
-<breakpoint enabled="true" persistant="true" registered="true">
 <resource path="/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" type="1"/>
 <marker lineNumber="1149" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
 <attrib name="enabled" value="true"/>
@@ -153,7 +113,7 @@
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
 <resource path="/SPI_Slave_USB/Src/main.c" type="1"/>
-<marker lineNumber="116" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<marker lineNumber="124" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
 <attrib name="enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
 <attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
@@ -163,17 +123,17 @@
 <attrib name="persistant" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
 <attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
-<attrib name="message" value="Line breakpoint: main.c [line: 116]"/>
+<attrib name="message" value="Line breakpoint: main.c [line: 124]"/>
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/SPI_Slave_USB/Src/main.c"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\STM\projects\CooCox_CAN_Listen\SPI_Slave_USB\Src\main.c"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
 <resource path="/SPI_Slave_USB/Src/main.c" type="1"/>
-<marker lineNumber="113" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<marker lineNumber="267" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
 <attrib name="enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
 <attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
@@ -183,12 +143,52 @@
 <attrib name="persistant" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
 <attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
-<attrib name="message" value="Line breakpoint: main.c [line: 113]"/>
+<attrib name="message" value="Line breakpoint: main.c [line: 267]"/>
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/SPI_Slave_USB/Src/main.c"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\STM\projects\CooCox_CAN_Listen\SPI_Slave_USB\Src\main.c"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" type="1"/>
+<marker lineNumber="1224" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: stm32f1xx_hal_spi.c [line: 1224]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\STM\projects\CooCox_CAN_Listen\SPI_Slave_USB\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" type="1"/>
+<marker lineNumber="1161" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: stm32f1xx_hal_spi.c [line: 1161]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/SPI_Slave_USB/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\STM\projects\CooCox_CAN_Listen\SPI_Slave_USB\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
 </marker>
 </breakpoint>
 </breakpoints>
