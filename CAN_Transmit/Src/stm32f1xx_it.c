@@ -60,7 +60,7 @@ void NMI_Handler(void)
 }
 
 /**
-* @brief This function handles Hard fault interrupt.
+* @brief
 */
 void HardFault_Handler(void)
 {

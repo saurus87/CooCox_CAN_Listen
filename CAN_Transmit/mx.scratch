@@ -3,7 +3,7 @@
 <ProjectName>C:\STM\projects\CooCox_CAN_Listen\CAN_Transmit\\CAN_Transmit</ProjectName>
 <ProjectNature>C</ProjectNature> 
 <CMSIS>..\Drivers\CMSIS</CMSIS>
-<HAL_Driver>C:\Users\admin3d\STM32Cube\Repository\STM32Cube_FW_F1_V1.4.0\Drivers\CMSIS</HAL_Driver>
+<HAL_Driver>C:\Users\admin3d\STM32Cube\Repository\STM32Cube_FW_F1_V1.6.1\Drivers\CMSIS</HAL_Driver>
 <Toolchain>SW4STM32</Toolchain>
 <Version>0</Version>
 
@@ -30,7 +30,7 @@
     	<board>custom</board>
 			
     <usedDebug>true</usedDebug>
-    	<debugprobe>jtag</debugprobe>
+    	<debugprobe>swd</debugprobe>
     <optimization>2</optimization>
     <icfloc>0</icfloc>
     <Adefines>

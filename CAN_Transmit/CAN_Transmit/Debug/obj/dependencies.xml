@@ -8,7 +8,7 @@
          <include file="..\..\..\Drivers\CMSIS\Include\core_cm3.h"/>
          <include file="..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h"/>
       </source>
-      <source file="..\..\..\Src\stm32f1xx_it.c" lastModified="163dde32c10">
+      <source file="..\..\..\Src\stm32f1xx_it.c" lastModified="163df4934b4">
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h"/>
          <include file="..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h"/>
          <include file="..\..\..\Inc\stm32f1xx_it.h"/>
@@ -17,7 +17,7 @@
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h"/>
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h"/>
       </source>
-      <source file="..\..\..\Src\stm32f1xx_hal_msp.c" lastModified="163dde32d34">
+      <source file="..\..\..\Src\stm32f1xx_hal_msp.c" lastModified="163df493593">
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h"/>
       </source>
       <source file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c" lastModified="15dc101b277">
@@ -69,9 +69,9 @@
       <source file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c" lastModified="15dc101b31b">
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="1602b5d0dc3">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="163deaa3c8d">
       </source>
-      <source file="..\..\..\Inc\stm32f1xx_it.h" lastModified="163dde32c8b">
+      <source file="..\..\..\Inc\stm32f1xx_it.h" lastModified="163df493502">
       </source>
       <source file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can_ex.h" lastModified="15dc101b0cb">
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h"/>
@@ -89,11 +89,13 @@
       <source file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h" lastModified="15dc101b0e4">
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h"/>
       </source>
+      <source file="..\..\..\stdio\printf.c" lastModified="163df4fff17">
+      </source>
       <source file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h" lastModified="15dc101b1cc">
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h"/>
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h"/>
       </source>
-      <source file="..\..\..\Src\system_stm32f1xx.c" lastModified="1602b5d0dbd">
+      <source file="..\..\..\Src\system_stm32f1xx.c" lastModified="163deaa3c8c">
          <include file="..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h"/>
       </source>
       <source file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c" lastModified="15dc101b31e">
@@ -105,11 +107,11 @@
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h"/>
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h"/>
       </source>
-      <source file="..\..\..\Src\main.c" lastModified="163dde32f12">
+      <source file="..\..\..\Src\main.c" lastModified="163df4e09f9">
          <include file="..\..\..\Inc\main.h"/>
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h"/>
       </source>
-      <source file="..\..\..\Inc\stm32f1xx_hal_conf.h" lastModified="163dde37ffe">
+      <source file="..\..\..\Inc\stm32f1xx_hal_conf.h" lastModified="163df49883a">
          <include file="..\..\..\Inc\main.h"/>
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h"/>
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h"/>
@@ -143,7 +145,7 @@
          <include file="..\..\..\Drivers\CMSIS\Include\cmsis_armcc_V6.h"/>
          <include file="..\..\..\Drivers\CMSIS\Include\cmsis_gcc.h"/>
       </source>
-      <source file="..\..\..\Inc\main.h" lastModified="163dde32e8b">
+      <source file="..\..\..\Inc\main.h" lastModified="163df493699">
       </source>
       <source file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h" lastModified="15dc101b0db">
          <include file="..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h"/>

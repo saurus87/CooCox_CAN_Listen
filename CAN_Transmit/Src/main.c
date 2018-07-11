@@ -1,7 +1,8 @@
+
 /**
   ******************************************************************************
-  * File Name          : main.c
-  * Description        : Main program body
+  * @file           : main.c
+  * @brief          : Main program body
   ******************************************************************************
   ** This notice applies to any and all portions of this file
   * that are not between comment pairs USER CODE BEGIN and
@@ -41,6 +42,8 @@
 
 /* USER CODE BEGIN Includes */
 
+//#define __cplusplus;
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -69,6 +72,7 @@ static void MX_USART1_UART_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
+extern void initialise_monitor_handles(void);
 
 /* USER CODE END PFP */
 
@@ -76,9 +80,13 @@ static void MX_USART1_UART_Init(void);
 
 /* USER CODE END 0 */
 
+/**
+  * @brief  The application entry point.
+  *
+  * @retval None
+  */
 int main(void)
 {
-
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -103,15 +111,14 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN_Init();
   MX_USART1_UART_Init();
-
   /* USER CODE BEGIN 2 */
 //  hcan->pTxMsg->StdId = 1;
 
 
-  hcan.pTxMsg = &canTxMessage;
-  hcan.pRxMsg = &canRxMessage;
+//  hcan.pTxMsg = &canTxMessage;
+//  hcan.pRxMsg = &canRxMessage;
 
-	CAN_FilterConfTypeDef canFilterConfig;
+/*	CAN_FilterConfTypeDef canFilterConfig;
 	canFilterConfig.FilterNumber = 0;
 	canFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST;
 	canFilterConfig.FilterScale = CAN_FILTERSCALE_16BIT;
@@ -130,7 +137,7 @@ int main(void)
 	canFilterConfig.FilterMaskIdHigh = 0xA<<5;
 	canFilterConfig.FilterMaskIdLow = 0x33<<5;
 	HAL_CAN_ConfigFilter(&hcan, &canFilterConfig);
-
+*/
 //	HAL_CAN_Receive_IT(&hcan, CAN_FIFO0) ;
 
 
@@ -142,6 +149,9 @@ int main(void)
 //  HAL_TIM_Base_Start_IT(&htim2);
 
   HAL_CAN_Receive_IT(&hcan, CAN_FIFO0);
+  initialise_monitor_handles();
+
+  printf("Init OK, start While\n");
 
   /* USER CODE END 2 */
 
@@ -156,11 +166,11 @@ int main(void)
 //	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
 //	  HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
 
-	  HAL_Delay(500);
-	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
-	  HAL_Delay(500);
+	 // HAL_Delay(500);
+//	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
+	  //HAL_Delay(500);
 
-/*	  hcan.pTxMsg->StdId = 0x222;
+	  hcan.pTxMsg->StdId = 0x222;
 	  hcan.pTxMsg->DLC = 8;
 	  hcan.pTxMsg->Data[0] = 1;
 	  hcan.pTxMsg->Data[1] = 2;
@@ -169,11 +179,15 @@ int main(void)
 	  hcan.pTxMsg->Data[4] = 5;
 	  hcan.pTxMsg->Data[5] = 6;
 	  hcan.pTxMsg->Data[6] = 7;
-	  hcan.pTxMsg->Data[7] = 8;*/
+	  hcan.pTxMsg->Data[7] = 8;
 //	  HAL_CAN_Transmit(&hcan, 10);
 
-	  hhal_state = HAL_CAN_Transmit(&hcan,100);
-	  HAL_UART_Transmit(&huart1, (uint8_t*) hhal_state, 10, 100);
+
+//	  __io_putchar("sdsdfasf\n");
+
+	  hhal_state = HAL_CAN_Transmit_IT(&hcan);
+	  printf("%d\n",hhal_state);
+//	  HAL_UART_Transmit(&huart1, (uint8_t*) hhal_state, 10, 10);
 
 //	  if (HAL_CAN_Transmit(&hcan,10) == HAL_OK)
 //	  {
@@ -185,8 +199,10 @@ int main(void)
 
 }
 
-/** System Clock Configuration
-*/
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
 void SystemClock_Config(void)
 {
 
@@ -291,7 +307,6 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
@@ -335,52 +350,54 @@ void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef *hcan1)
 
 }
 
-
+int __io_putchar(int ch)
+{
+ITM_SendChar(ch);
+return ch;
+}
 
 
 /* USER CODE END 4 */
 
 /**
   * @brief  This function is executed in case of error occurrence.
-  * @param  None
+  * @param  file: The file name as string.
+  * @param  line: The line in file as a number.
   * @retval None
   */
-void _Error_Handler(char * file, int line)
+void _Error_Handler(char *file, int line)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
   while(1) 
   {
   }
-  /* USER CODE END Error_Handler_Debug */ 
+  /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef USE_FULL_ASSERT
-
+#ifdef  USE_FULL_ASSERT
 /**
-   * @brief Reports the name of the source file and the source line number
-   * where the assert_param error has occurred.
-   * @param file: pointer to the source file name
-   * @param line: assert_param error line source number
-   * @retval None
-   */
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
 void assert_failed(uint8_t* file, uint32_t line)
-{
+{ 
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
-
 }
-
-#endif
-
-/**
-  * @}
-  */ 
+#endif /* USE_FULL_ASSERT */
 
 /**
   * @}
-*/ 
+  */
+
+/**
+  * @}
+  */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

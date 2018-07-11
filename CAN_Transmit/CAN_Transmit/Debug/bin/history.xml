@@ -1,26 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="4.7.2 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=CAN_SPI_Master.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\CAN_Transmit -TC:\CooCox\CoIDE\configuration\ProgramData\CAN_Transmit/arm-gcc-link.ld -g">
-      <target file="CAN_SPI_Master.elf" lastModified="163dde942f1">
-         <source file="..\obj\stm32f1xx_hal_rcc_ex.o" lastModified="163dde938d5"/>
-         <source file="..\obj\stm32f1xx_hal_pwr.o" lastModified="163dde93947"/>
-         <source file="..\obj\stm32f1xx_hal_can.o" lastModified="163dde939e4"/>
-         <source file="..\obj\stm32f1xx_hal.o" lastModified="163dde93a4e"/>
-         <source file="..\obj\stm32f1xx_it.o" lastModified="163dde93aac"/>
-         <source file="..\obj\stm32f1xx_hal_gpio_ex.o" lastModified="163dde93b07"/>
-         <source file="..\obj\stm32f1xx_hal_cortex.o" lastModified="163dde93b7b"/>
-         <source file="..\obj\system_stm32f1xx.o" lastModified="163dde93bc0"/>
-         <source file="..\obj\stm32f1xx_hal_rcc.o" lastModified="163dde93c60"/>
-         <source file="..\obj\startup_stm32f10x_md.o" lastModified="163dde93c8d"/>
-         <source file="..\obj\stm32f1xx_hal_uart.o" lastModified="163dde93d3e"/>
-         <source file="..\obj\main.o" lastModified="163dde93da8"/>
-         <source file="..\obj\stm32f1xx_hal_flash.o" lastModified="163dde93e1a"/>
-         <source file="..\obj\stm32f1xx_hal_gpio.o" lastModified="163dde93e86"/>
-         <source file="..\obj\stm32f1xx_hal_dma.o" lastModified="163dde93f04"/>
-         <source file="..\obj\stm32f1xx_hal_msp.o" lastModified="163dde93f69"/>
-         <source file="..\obj\stm32f1xx_hal_tim.o" lastModified="163dde93fc0"/>
-         <source file="..\obj\stm32f1xx_hal_flash_ex.o" lastModified="163dde9403f"/>
-         <source file="..\obj\stm32f1xx_hal_tim_ex.o" lastModified="163dde94094"/>
+   <processor signature="4.7.2 -mcpu=cortex-m3 -mthumb -g -Map=CAN_SPI_Master.map -O0 --gc-sections -lm -lgcc -lc -lrdimon -lstdc++ -LC:\CooCox\CoIDE\configuration\ProgramData\CAN_Transmit -TC:\CooCox\CoIDE\configuration\ProgramData\CAN_Transmit/arm-gcc-link.ld -g">
+      <target file="CAN_SPI_Master.elf" lastModified="163df5004b4">
+         <source file="..\obj\stm32f1xx_hal_rcc_ex.o" lastModified="163df4ff987"/>
+         <source file="..\obj\stm32f1xx_hal_pwr.o" lastModified="163df4ffa04"/>
+         <source file="..\obj\stm32f1xx_hal_can.o" lastModified="163df4ffab5"/>
+         <source file="..\obj\stm32f1xx_hal.o" lastModified="163df4ffb20"/>
+         <source file="..\obj\stm32f1xx_it.o" lastModified="163df4ffb91"/>
+         <source file="..\obj\stm32f1xx_hal_gpio_ex.o" lastModified="163df4ffbef"/>
+         <source file="..\obj\stm32f1xx_hal_cortex.o" lastModified="163df4ffc68"/>
+         <source file="..\obj\system_stm32f1xx.o" lastModified="163df4ffcae"/>
+         <source file="..\obj\stm32f1xx_hal_rcc.o" lastModified="163df4ffd4d"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="163df4ffd7b"/>
+         <source file="..\obj\stm32f1xx_hal_uart.o" lastModified="163df4ffe2a"/>
+         <source file="..\obj\main.o" lastModified="163df4fff0c"/>
+         <source file="..\obj\printf.o" lastModified="163df4fff78"/>
+         <source file="..\obj\stm32f1xx_hal_flash.o" lastModified="163df4ffff6"/>
+         <source file="..\obj\stm32f1xx_hal_gpio.o" lastModified="163df500065"/>
+         <source file="..\obj\stm32f1xx_hal_dma.o" lastModified="163df5000e5"/>
+         <source file="..\obj\stm32f1xx_hal_msp.o" lastModified="163df50014d"/>
+         <source file="..\obj\stm32f1xx_hal_tim.o" lastModified="163df5001a8"/>
+         <source file="..\obj\stm32f1xx_hal_flash_ex.o" lastModified="163df500235"/>
+         <source file="..\obj\stm32f1xx_hal_tim_ex.o" lastModified="163df50028d"/>
       </target>
    </processor>
 </history>
